@@ -3,17 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/estilotabla.css">
     <title>Tablas</title>
-    <style>
+    <!--<style>
         body{
             margin: auto;
             color: rgb(0,255,60);
+            background: rgb(67, 6, 6);
         }
-    </style>
+        /*Aquí va un comentario
+        dar estilos a una clase*/
+        .contenedor{
+            background:#ecf405;
+            color: #271a66;
+        }
+        /*Utilizamos el elemento id*/
+        #titulo{
+            color: blueviolet;
+            text-align: center;
+            font-size: 15px;
+
+        }
+    </style>-->
 </head>
 <body>
-    <h1>Tabla de posiciones campeonato ecuatoriano 2025</h1>
-    <div>
+    <div class="titulo-contenedor">
+        <h1 id="titulo">Tabla de posiciones campeonato ecuatoriano 2025</h1>
+    </div>
+    <div >
         <table border="1px">
             <thead>
                 <tr>
@@ -61,7 +78,9 @@
             </tfoot>
         </table>
     </div>
-    
+    <div >
+        <a href="../index.html"><b>Ir al Inicio</b></a>
+    </div>
     
 </body>
 </html>

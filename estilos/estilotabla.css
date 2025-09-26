@@ -1,0 +1,18 @@
+* {
+    margin: auto;
+    color: rgb(5, 227, 83);
+    /* background-image: url(../img/133843626129351005.jpg);
+    background-repeat: no-repeat;*/
+}
+
+/*Estilos para el titulo*/
+.titulo-contenedor {
+    background: rgb(246, 11, 11);
+    border: 5px solid rgb(86, 7, 232);
+    width: 700px;
+    height: 50px;
+    padding: 20px 50px 20px 50px;
+    margin: 100px 20px 50px 30px;
+    box-shadow: 10px 10px 5px rgb(255, 164, 214);
+
+}
