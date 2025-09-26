@@ -1,0 +1,83 @@
+/* 
+    Aplicamos el modelo de caja a TODOS los elementos:
+    Esto hace que el ancho y alto incluyan el contenido, el padding y el borde.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    Caja de perfil:
+    - width: define el ancho de la caja.
+    - margin: separa la caja de otras cajas (margen exterior).
+    - padding: espacio interno entre el contenido y el borde.
+    - border: borde visible alrededor de la caja.
+    - border-radius: redondea las esquinas del borde.
+    - background: color de fondo de la caja.
+*/
+.perfil {
+    width: 350px;
+    margin: 30px auto 20px auto;
+    padding: 20px;
+    border: 2px solid #337ab7;
+    border-radius: 10px;
+    background: #f5fafd;
+    box-shadow: 0 2px 8px rgba(51, 122, 183, 0.1);
+}
+
+/*
+    Cada sección es una caja:
+    - width/max-width: controla el tamaño de la caja.
+    - margin: separa la caja de otras cajas.
+    - padding: espacio interno.
+    - border: borde visible.
+    - border-radius/background: decoración de la caja.
+*/
+.seccion {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 18px 24px;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    background: #fcfcfc;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+
+/*
+    Caja para las redes sociales:
+    Igual aplica el modelo de caja con ancho, margen, padding, borde y fondo.
+*/
+.redes {
+    width: 350px;
+    margin: 30px auto 0 auto;
+    padding: 15px;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    background: #fafafa;
+}
+
+/* 
+    Las listas y los títulos también tienen sus márgenes y paddings,
+    que forman parte del modelo de caja.
+*/
+ul {
+    margin: 10px 0 0 20px;
+    padding: 0 0 0 20px;
+}
+
+h1, h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    padding: 0;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}

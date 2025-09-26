@@ -4,59 +4,85 @@
     <meta charset="UTF-8">
     <title>Hoja de Vida</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlazamos el CSS desde la carpeta estilos, subiendo un nivel desde vistas -->
+    <link rel="stylesheet" href="../estilos/estilos.css">
 </head>
 <body>
-    <div align="center">
+    <!-- 
+        Caja principal de perfil:
+        El modelo de caja se aplica aquí con ancho, padding, borde, margen y fondo 
+    -->
+    <div class="perfil" align="center">
         <img src="../img/yo.jpg" alt="Foto de perfil" width="100" height="100">
         <h1><b>STALIN PAGUAY LEMA</b></h1>
     </div>
 
-    <h2><b>Datos Personales</b></h2>
-    <ul>
-        <li><b>Dirección:</b> Av.Manuel Cordova Galarza y Pedro Porras</li>
-        <li><b>Teléfono:</b> 09962612539</li>
-        <li><b>Email:</b> stalin.paguay1999@hotmail.com</li>
-    </ul>
+    <!-- 
+        Cada sección (Datos personales, Formación, etc.) es una caja independiente.
+        El modelo de caja se aplica con margen, padding, borde y fondo.
+    -->
+    <section class="seccion">
+        <h2><b>Datos Personales</b></h2>
+        <ul>
+            <li><b>Dirección:</b> Av.Manuel Cordova Galarza y Pedro Porras</li>
+            <li><b>Teléfono:</b> 09962612539</li>
+            <li><b>Email:</b> stalin.paguay1999@hotmail.com</li>
+        </ul>
+    </section>
 
-    <h2><b>Formación Académica</b></h2>
-    <ul>
-        <li>
-            <b>Educación Secundaria:</b> Unidad Educativa Santo Domingo Savio<br>
-            <b>"Bachillerato General Unificado" (2013-2020)</b>
-        </li>
-        <li>
-            <b>Educación Superior:</b> Instituto Superior Quito<br>
-            <b>Ingeniería en Sistemas (2025-En curso)</b>
-        </li>
-    </ul>
+    <section class="seccion">
+        <h2><b>Formación Académica</b></h2>
+        <ul>
+            <li>
+                <b>Educación Secundaria:</b> Unidad Educativa Santo Domingo Savio<br>
+                <b>"Bachillerato General Unificado" (2013-2020)</b>
+            </li>
+            <li>
+                <b>Educación Superior:</b> Instituto Superior Quito<br>
+                <b>Ingeniería en Sistemas (2025-En curso)</b>
+            </li>
+        </ul>
+    </section>
 
-    <h2><b>Experiencia Laboral</b></h2>
-    <ul>
-        <li>
-            <b>Ayudante de bodega</b><br>
-            <b>Empresa:</b> Onducart (2022-2023)
-        </li>
-    </ul>
+    <section class="seccion">
+        <h2><b>Experiencia Laboral</b></h2>
+        <ul>
+            <li>
+                <b>Ayudante de bodega</b><br>
+                <b>Empresa:</b> Onducart (2022-2023)
+            </li>
+        </ul>
+    </section>
 
-    <h2><b>Habilidades</b></h2>
-    <ul>
-        <li><b>Trabajo en equipo</b></li>
-        <li><b>Responsabilidad</b></li>
-        <li><b>Creatividad</b></li>
-        <li><b>Adaptabilidad</b></li>
-    </ul>
+    <section class="seccion">
+        <h2><b>Habilidades</b></h2>
+        <ul>
+            <li><b>Trabajo en equipo</b></li>
+            <li><b>Responsabilidad</b></li>
+            <li><b>Creatividad</b></li>
+            <li><b>Adaptabilidad</b></li>
+        </ul>
+    </section>
+    
+    <section class="seccion">
+        <h2><b>Idiomas</b></h2>
+        <ul>
+            <li><b>Español:</b> Nativo</li>
+            <li><b>Inglés:</b> Básico</li>
+        </ul>
+    </section>
 
-    <h2><b>Idiomas</b></h2>
-    <ul>
-        <li><b>Español:</b> Nativo</li>
-        <li><b>Inglés:</b> Básico</li>
-    </ul>
-
-    <h2><b>Referencias</b></h2>
-    <p><b>Disponibles a solicitud</b></p>
+    <section class="seccion">
+        <h2><b>Referencias</b></h2>
+        <p><b>Disponibles a solicitud</b></p>
+    </section>
 
     <hr>
-    <div align="center">
+    <!-- 
+        Caja para los enlaces a redes sociales.
+        El modelo de caja se aplica igual que antes.
+    -->
+    <div class="redes" align="center">
         <a href="../index.html"><b>Ir al Inicio</b></a>
         <br><br>
         <b>Instagram:</b>
